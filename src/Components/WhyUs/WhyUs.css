@@ -1,0 +1,19 @@
+.col-xl-11{
+    border: 1px;
+    background-color:#0715624f;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 20px;
+    padding:3.2rem;
+    color: rgb(255, 255, 255);
+    box-shadow:10px 10px 15px rgba(0, 0, 0, 0.212);
+    /* font-weight:; */
+    /* position: absolute; */
+    /* display:flex; */
+    /* align-items: center; */
+    /* margin-left:20rem; */
+
+}
+.wh1{
+margin-top:2rem;
+margin-bottom:2rem;
+}

@@ -1,0 +1,151 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap'); */
+
+:root{
+    --bodyBg:#324458;
+    --formBg:#2296c4;
+    --textColor:#fff;
+    --primaryColor:#0076A3;
+    --paraColor:#5e6c79;
+    --paraColor:#74828f;
+
+}
+section{
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* width: 90%; */
+    /* max-width: 1900px;
+    margin: auto; */
+    margin-top: 4em;
+}
+.ic{
+margin-top:2px;    
+}
+.sectionHeader{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--primaryColor);
+    margin-bottom: .5em;
+}
+
+.heading,.sub-heading{
+    margin-top:2.5em;
+    margin-bottom:.5em;
+    /* font-weight: bold; */
+    font-size: 17px;
+}
+
+.heading{
+    font-size: 2.5em;
+}
+
+.sub-heading{
+    text-align:left;
+    margin-left:10px;
+    padding: 0;
+}
+.text{
+    margin-left:7px;
+}
+.contactForm{
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 1fr 1fr;
+}
+
+form{
+    width: 100%;
+    margin-top: 3em;
+}
+
+.para{
+    color: var(--paraColor);
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.para2{
+    text-align: left;
+}
+
+.input{
+    width: 95%;
+    max-width: 700px;
+    border: none;
+    font-size: .9rem;
+    padding: 1em;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid rgb(4, 54, 100);
+    margin-bottom: 1em;
+
+}
+
+.input:focus{
+    border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder{
+    text-transform: capitalize;
+}
+
+.submit{
+    background-color: rgba(30, 86, 160, 0.805);
+    border: none;
+    color: var(--textColor);
+    font-weight: bold;
+    cursor: pointer;
+    width: 96%;
+}
+
+.map-container{
+    position: relative;
+    width: 100%;
+    height: 455px;
+}
+
+.mapBg{
+    position: absolute;
+    background-color: var(--primaryColor);
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 93%;
+    height: 90%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contactMethod{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    text-align: left;
+}
+
+.method{
+    margin-left:2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contactIcon{
+    font-size: 2rem;
+    color: var(--primaryColor);
+    width: 70px;
+}
