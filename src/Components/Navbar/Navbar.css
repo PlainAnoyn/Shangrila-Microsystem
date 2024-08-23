@@ -10,6 +10,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 .icon{
     width:110px;
@@ -28,6 +29,34 @@ color: rgba(68, 180, 255, 0.855);
     background:#070e23e8;
     backdrop-filter:blur(35px);
     transition: 0.5s;
+}
+.navbar-scrolled {
+    background: rgba(7, 14, 35, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 110px;
+    height: auto;
+}
+
+.nav-link {
+    color: #fff !important;
+    padding: 0.5rem 1.5rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgba(68, 180, 255, 0.9) !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* -----------Media Query--------------- */
@@ -57,5 +86,17 @@ color: rgba(68, 180, 255, 0.855);
     nav ul li{
         display: block;
         margin: 25px 40px;
+    }
+}
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(7, 14, 35, 0.95);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
     }
 }

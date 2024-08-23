@@ -5,19 +5,25 @@ span{
     color: rgb(61, 151, 230);
 }
 .about{
-    background: url(../../assets/bg1.jpg) no-repeat left;
-    background-size: 44%;
+    background: url(../../assets/bg1.jpg) no-repeat right center;
+    background-size: contain;
     background-color: #bbebf8;
     overflow: hidden;
-    padding: 10px 0;
-    background-position-x:42rem;
+    padding: 40px 0;
+    position: relative;
 }
 .inner-section{
     width: 58%;
     float: left;
     background-color: #fdfdfd;
-    padding: 25px;
-    box-shadow: 10px 10px 8px rgba(133, 133, 133, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+.inner-section:hover {
+    transform: translateY(-5px);
 }
 .inner-section h1{
     margin-bottom: 30px;
@@ -30,6 +36,10 @@ span{
     line-height: 25px;
     text-align: justify;
     margin-bottom: 40px;
+}
+.text-secondary {
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 .skills button{
     font-size: 22px;
@@ -47,4 +57,9 @@ span{
     transition: 1s;
     background-color: #ecf5f5;
     color: #004b9c;
+}
+@media (max-width: 992px) {
+    .about-image {
+        min-height: 300px;
+    }
 }
